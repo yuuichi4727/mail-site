@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-btn.submit__button {
+    @apply w-full 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sidebar__active {
+    @apply bg-blue-700
+}
+
+.sidebar__active-folder {
+    @apply font-bold  bg-blue-700
+}
+
+.user__icon{
+    
+}
+
+.ant-btn.logout__btn {
+    @apply duration-100 shadow-md gap-2 px-4 py-2 rounded-md bg-red-500 border-red-500 text-white hover:bg-red-400 hover:border-red-400 hover:text-white text-lg flex items-center  
+}
+
+.mail__icon{
+    background: url(./img/icon.png) center center / cover no-repeat rgb(238, 238, 238)
+
+}
+
+.scroll__bar{
+    height: calc(100% - 3.5rem);
+}
+
+.ant-btn.btn.reply__btn {
+    @apply  duration-100 shadow-md gap-2  rounded-md  text-lg bg-gray-500 text-white hover:bg-gray-400 h-10  hover:text-white border-gray-500 hover:border-gray-400
+}
+
+.ant-btn.btn.forward__btn {
+    @apply  duration-100 shadow-md gap-2  rounded-md  text-lg h-10 text-green-500 border-green-500 hover:text-green-500 hover:border-green-500
+}
+
+.ant-btn.btn.delete__btn {
+    @apply  duration-100 shadow-md gap-2  rounded-md  text-lg h-10 text-red-500 border-red-500 hover:text-red-500 hover:border-red-500
+}
+
+.seletcted__mail{
+    @apply bg-gray-200
 }
